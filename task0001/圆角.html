@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        #mid {
+  height: 50px;
+  background: #fff;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+div.rtop {
+  display: block;
+  background: #fff;
+}
+
+div.rtop div {
+  display: block;
+  height: 1px;
+  overflow: hidden;
+  /* background: #000; */
+}
+
+div.r1 {
+  background: #000;
+  margin: 0 3px;
+}
+
+div.r2 {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  margin: 0 2px;
+}
+
+div.r3 {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  margin: 0 1px;
+}
+
+div.rtop div.r4 {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  margin: 0 1px;
+  height: 1px;
+}
+        </style>
+    </head>
+    <body>
+
+
+<div class="rtop">
+  <div class="r1"></div>
+  <div class="r2"></div>
+  <div class="r3"></div>
+  <div class="r4"></div>
+</div>
+<div id="mid"></div>
+<div class="rtop">
+  <div class="r4"></div>
+  <div class="r3"></div>
+  <div class="r2"></div>
+  <div class="r1"></div>
+</div>
+
+
+    </body>
+</html>
