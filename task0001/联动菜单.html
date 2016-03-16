@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+</head>
+<body>
+   <select name="" id="prov" onchange="Id();">
+      <option value="-1">请选择</option>
+      <option value="0">北京</option>
+      <option value="1">安徽</option>
+   </select>
+   <select name="" id="city"></select>
+   <script>
+ var area=[['hai','dd','sd'],['sd','dd','sw']];
+       function Id(){
+         var sel=document.getElementById("prov");
+         var opt='';
+         for(var i=0,len=area[sel.value].length;i<len;i++){
+            opt=opt+'<option value="'+i+'">'+area[sel.value][i]+"</option>";
+         }    
+         document.getElementById("city").innerHTML=opt;   }
+ </script>
+ </body>
+
+</html>

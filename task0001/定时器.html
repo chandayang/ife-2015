@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+	function bang(){
+		var zhi=document.getElementsByName("time")[0];
+		var time=parseInt(zhi.value)-1;
+		zhi.value=time;
+		if(time==0){
+			document.getElementsByTagName('img')[0].src='2.jpg';
+			clearInterval(clock);
+		}
+	}
+	var clock=setInterval('bang()',1000)
+	</script>
+</head>
+<body>
+	<h1>定时器</h1>
+	<input type="button" name="time" value="5"></br>
+	<img src="1.jpg" alt="">
+</body>
+</html>
